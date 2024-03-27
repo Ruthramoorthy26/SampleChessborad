@@ -1,0 +1,32 @@
+body {
+    background-color: seagreen;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 10px solid teal;
+    box-shadow: 10px 10px 150px 70px black;
+}
+
+caption {
+    text-shadow: -50px -10px 5px yellow;
+    color: lawngreen;
+    font-size: xx-large;
+}
+
+td {
+    padding: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+/*tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even)*/
+tr:nth-of-type(odd) td:nth-of-type(odd),
+tr:nth-of-type(even) td:nth-of-type(even) {
+    background-color: black;
+}
